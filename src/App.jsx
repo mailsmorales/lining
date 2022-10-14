@@ -1,9 +1,10 @@
 import "./App.css";
+import { BaseButton } from "./components/ui/button/BaseButton";
 
 function App() {
   return (
     <div>
-      <h1>Hello</h1>
+      <BaseButton />
     </div>
   );
 }
