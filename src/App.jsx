@@ -4,7 +4,7 @@ import { BaseButton } from "./components/ui/button/BaseButton";
 function App() {
   return (
     <div>
-      <BaseButton />
+      <BaseButton name={"Подробнее"} withIcon iconType="right" />
     </div>
   );
 }

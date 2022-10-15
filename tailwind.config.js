@@ -4,6 +4,11 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      'nunito': ['nunito', 'sans-serif'],
+      'gilroy': ['Gilroy', 'sans-serif'],
+      'tt-norms-pro': ['TTNormsPro', 'sans-serif'],
+    },
   },
   plugins: [],
 }

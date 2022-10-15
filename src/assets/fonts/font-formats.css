@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'Gilroy';
+    /* src: url('./Gilroy/Gilroy-Regular.eot'); */
+    src: local('Gilroy Regular'), local('Gilroy-Regular'),
+        /* url('./Gilroy/Gilroy-Regular.eot?#iefix') format('embedded-opentype'), */
+        url('./Gilroy/Gilroy-Regular.woff2') format('woff2'),
+        url('./Gilroy/Gilroy-Regular.woff') format('woff'),
+        url('./Gilroy/Gilroy-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    /* src: url('./Gilroy/Gilroy-Bold.eot'); */
+    src: local('Gilroy Bold'), local('Gilroy-Bold'),
+        /* url('./Gilroy/Gilroy-Bold.eot?#iefix') format('embedded-opentype'), */
+        url('./Gilroy/Gilroy-Bold.woff2') format('woff2'),
+        url('./Gilroy/Gilroy-Bold.woff') format('woff'),
+        url('./Gilroy/Gilroy-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    /* src: url('./Gilroy/Gilroy-Semibold.eot'); */
+    src: local('Gilroy Semibold'), local('Gilroy-Semibold'),
+        /* url('./Gilroy/Gilroy-Semibold.eot?#iefix') format('embedded-opentype'), */
+        url('./Gilroy/Gilroy-Semibold.woff2') format('woff2'),
+        url('./Gilroy/Gilroy-Semibold.woff') format('woff'),
+        url('./Gilroy/Gilroy-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    /* src: url('./Gilroy/Gilroy-Medium.eot'); */
+    src: local('Gilroy Medium'), local('Gilroy-Medium'),
+        /* url('./Gilroy/Gilroy-Medium.eot?#iefix') format('embedded-opentype'), */
+        url('./Gilroy/Gilroy-Medium.woff2') format('woff2'),
+        url('./Gilroy/Gilroy-Medium.woff') format('woff'),
+        url('./Gilroy/Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TTNormsPro';
+    /* src: url('./TTNormsPro/TTNormsPro-Bold.eot'); */
+    src: local('TT Norms Pro Bold'), local('TTNormsPro-Bold'),
+        /* url('./TTNormsPro/TTNormsPro-Bold.eot?#iefix') format('embedded-opentype'), */
+        url('./TTNormsPro/TTNormsPro-Bold.woff2') format('woff2'),
+        url('./TTNormsPro/TTNormsPro-Bold.woff') format('woff'),
+        url('./TTNormsPro/TTNormsPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TTNormsPro';
+    /* src: url('./TTNormsPro/TTNormsPro-Regular.eot'); */
+    src: local('TT Norms Pro Regular'), local('TTNormsPro-Regular'),
+        /* url('./TTNormsPro/TTNormsPro-Regular.eot?#iefix') format('embedded-opentype'), */
+        url('./TTNormsPro/TTNormsPro-Regular.woff2') format('woff2'),
+        url('./TTNormsPro/TTNormsPro-Regular.woff') format('woff'),
+        url('./TTNormsPro/TTNormsPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TTNormsPro';
+    /* src: url('./TTNormsPro/TTNormsPro-Medium.eot'); */
+    src: local('TT Norms Pro Medium'), local('TTNormsPro-Medium'),
+        /* url('./TTNormsPro/TTNormsPro-Medium.eot?#iefix') format('embedded-opentype'), */
+        url('./TTNormsPro/TTNormsPro-Medium.woff2') format('woff2'),
+        url('./TTNormsPro/TTNormsPro-Medium.woff') format('woff'),
+        url('./TTNormsPro/TTNormsPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
