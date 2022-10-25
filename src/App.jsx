@@ -1,15 +1,12 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import { BaseButton } from "./components/ui/button/BaseButton";
-import { BaseGoogleBt } from "./components/ui/button/BaseGoogleBt"
+import { TheHomePage } from "./views/TheHomePage";
 
 function App() {
   return (
-    <>
-      <div>
-        <BaseButton name={"Подробнее"} withIcon iconType="right" />
-      </div>
-        <BaseGoogleBt name={"Войти через Google"} />
-    </>
+    <Routes>
+      <Route path="/" element={<TheHomePage />} />
+    </Routes>
   );
 }
 
