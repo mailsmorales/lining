@@ -1,17 +1,10 @@
-import React from 'react'
-import { HeaderLogo } from './HeaderLogo'
-import { HeaderNav } from './HeaderNav'
+import React from "react";
+import { Navbar } from "../navbar/Navbar";
 
 export const Header = () => {
   return (
-    <div className='header'>
-        <div className="container_content">
-            <div className="header_content flex justify-between text-center items-center">
-                <HeaderLogo />
-                <HeaderNav />
-                awdawdada
-            </div>
-        </div>
+    <div className="header bg-red-600 pt-2">
+      <Navbar />
     </div>
-  )
-}
+  );
+};
