@@ -25,13 +25,13 @@ export const Navbar = () => {
   ];
 
   const renderMenuItmes = menuItems.map((item) => (
-    <li className="p-4">
+    <li className="p-4" key={item.title}>
       <a href={item.path}>{item.title}</a>
     </li>
   ));
 
   const renderMenuBar = menuItems.map((item) => (
-    <li className="p-4 border-b border-white">
+    <li className="p-4 border-b border-white" key={item.title}>
       <a href={item.path}>{item.title}</a>
     </li>
   ));
