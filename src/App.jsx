@@ -1,12 +1,12 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import { TheHomePage } from "./views/TheHomePage";
+import { HomePage } from "./views/HomePage";
 
 
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<TheHomePage />} />
+      <Route path="/" element={<HomePage />} />
     </Routes>
   );
 }
