@@ -6,26 +6,21 @@ export const NavBar = () => {
   const menuItems = [
     {
       title: "Главная",
-      path: "/",
     },
     {
       title: "Мужское",
       subMenu: [
         {
           title: "Кроссовки",
-          path: "/",
         },
         {
           title: "Одежда",
-          path: "/",
         },
         {
           title: "Аксессуары",
-          path: "/",
         },
         {
           title: "Для баскетбола",
-          path: "/",
         },
       ],
     },
@@ -34,17 +29,16 @@ export const NavBar = () => {
     },
     {
       title: "Lining Wade",
-      path: "/",
     },
     {
       title: "О Li-Ning",
-      path: "/",
     },
   ];
 
   const renderMenuItmes = menuItems.map((item) => (
     <li className="p-4" key={item.title}>
-      <a href={item.path}>{item.title}</a>
+      {/* <a href={item.path}>{item.title}</a> */}
+      {item.title}
     </li>
   ));
 
