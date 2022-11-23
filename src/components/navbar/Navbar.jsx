@@ -6,21 +6,26 @@ export const NavBar = () => {
   const menuItems = [
     {
       title: "Главная",
+      url: "/",
     },
     {
       title: "Мужское",
       subMenu: [
         {
           title: "Кроссовки",
+          url: "Sneakers",
         },
         {
           title: "Одежда",
+          url: "Clothing",
         },
         {
           title: "Аксессуары",
+          url: "Accessories",
         },
         {
           title: "Для баскетбола",
+          url: "Basketball",
         },
       ],
     },
@@ -29,16 +34,20 @@ export const NavBar = () => {
     },
     {
       title: "Lining Wade",
+      url: "/",
     },
     {
       title: "О Li-Ning",
+      url: "/",
     },
   ];
 
-  const renderMenuItmes = menuItems.map((item) => (
-    <li className="p-4" key={item.title}>
-      {/* <a href={item.path}>{item.title}</a> */}
-      {item.title}
+  const renderMenuItmes = menuItems.map((menu, index) => (
+    // <li className="p-4" key={item.title}>
+    //   <a href={item.path}>{item.title}</a>
+    // </li>
+    <li className="p-4" key={index}>
+      <a href={menu.url}>{menu.title}</a>
     </li>
   ));
 
