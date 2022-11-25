@@ -3,85 +3,6 @@ import Logo from "../../assets/img/Logo.png";
 import { AiOutlineClose, AiOutlineMenu, AiOutlineSearch } from "react-icons/ai";
 
 export const NavBar = () => {
-  const menuItems = [
-    {
-      title: "Главная",
-      url: "/",
-    },
-    {
-      title: "Мужское",
-      subMenu: [
-        {
-          title: "Кроссовки",
-          url: "Sneakers",
-        },
-        {
-          title: "Одежда",
-          url: "Clothing",
-        },
-        {
-          title: "Аксессуары",
-          url: "Accessories",
-        },
-        {
-          title: "Для баскетбола",
-          url: "Basketball",
-        },
-      ],
-    },
-    {
-      title: "Женские",
-    },
-    {
-      title: "Lining Wade",
-      url: "/",
-    },
-    {
-      title: "О Li-Ning",
-      url: "/",
-    },
-  ];
-
-  const renderMenuItmes = menuItems.map((menu, index) => (
-    // <li className="p-4" key={item.title}>
-    //   <a href={item.path}>{item.title}</a>
-    // </li>
-    <li className="p-4" key={index}>
-      <a href={menu.url}>{menu.title}</a>
-    </li>
-  ));
-
-  const renderMenuSideBar = menuItems.map((item) => (
-    <li className="p-4 border-b border-white hover:text-black" key={item.title}>
-      <a href={item.path}>{item.title}</a>
-    </li>
-  ));
-
-  // const listItem = [
-  //   {
-  //     title: "Кроссовки",
-  //     path: '/'
-  //   },
-  //   {
-  //     title: "Одежда",
-  //     path: '/'
-  //   },
-  //   {
-  //     title: "Аксессуары",
-  //     path: '/'
-  //   },
-  //   {
-  //     title: "Для баскетбола",
-  //     path: '/'
-  //   },
-  // ];
-
-  // const renderListItem = listItem.map((item) => (
-  //   <li className="" key={item.title}>
-  //     <a href={item.path}>{item.title}</a>
-  //   </li>
-  // ));
-
   const [nav, setNav] = useState(false);
 
   const handleNav = () => {
@@ -93,7 +14,7 @@ export const NavBar = () => {
       <img src={Logo} alt="" />
       <nav>
         <ul className="flex bg-red-500 hidden md:flex uppercase cursor-pointer">
-          {renderMenuItmes}
+          
         </ul>
       </nav>
       <div className="flex cursor-pointer">
@@ -113,7 +34,7 @@ export const NavBar = () => {
       >
         <img className="m-4" src={Logo} alt="" />
         <nav>
-          <ul className="uppercase cursor-pointer p-4">{renderMenuSideBar}</ul>
+          <ul className="uppercase cursor-pointer p-4"></ul>
         </nav>
       </div>
     </div>
