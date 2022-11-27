@@ -61,8 +61,8 @@ const frUpIcon = (
 export const BaseButton = ({ name, withIcon, iconType }) => {
   return (
     <div>
-      <button className="flex text-center items-center group px-8 py-4 rounded-lg border-2 bg-red-600 hover:bg-white hover:border-red-600">
-        <span className="text-white group-hover:text-red-600 text-base font-medium">
+      <button className="flex text-center items-center group px-6 py-2 rounded-full border-2 bg-purple-800 hover:bg-white hover:border-purple-800">
+        <span className="text-white group-hover:text-purple-800 text-base font-medium">
           {name}
         </span>
         {withIcon && iconType && (
