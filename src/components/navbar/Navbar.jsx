@@ -5,11 +5,15 @@ import { BaseButton } from "../ui/button/BaseButton";
 import { NavLinks } from "./NavLinks";
 
 export const NavBar = () => {
+  
   return (
     <nav className="bg-purple-700">
       <div className="flex items-center font-medium justify-around">
-        <div className="z-50 p-5 md:w-auto w-full">
+        <div className="z-50 p-5 md:w-auto w-full flex justify-between">
           <img src={Logo} alt="logo" className="md:cursor-pointer h-9" />
+          <div className="text-3xl">
+          <ion-icon name="menu"></ion-icon>
+          </div>
         </div>
         <ul className="md:flex hidden uppercase items-center gap-8 text-white">
           <li>
