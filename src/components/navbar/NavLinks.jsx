@@ -12,7 +12,7 @@ export const NavLinks = () => {
         <div>
           <div className="px-3 text-left md:cursor-pointer group">
             <h1
-              className="py-7 flex justify-between items-center md:pr-0 pr-5 group"
+              className="py-7 flex justify-between items-center md:pr-0 pr-5 group cursor-pointer"
               onClick={() => {
                 heading !== link.name ? setHeading(link.name) : setHeading("");
                 setSubHeading("");
@@ -75,7 +75,7 @@ export const NavLinks = () => {
                         ? setSubHeading(slinks.Head)
                         : setSubHeading("")
                     }
-                    className="py-4 pl-7 font-semibold md:pr-0 pr-5 flex justify-between items-center"
+                    className="py-4 pl-7 font-semibold md:pr-0 pr-5 flex justify-between items-center cursor-pointer"
                   >
                     {slinks.Head}
                     <span className="text-xl md:mt-1 md:ml-2 inline">
