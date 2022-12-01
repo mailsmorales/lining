@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { links } from "./MyLinks";
+import { links } from "./myLinks";
 
 export const NavLinks = () => {
   const [heading, setHeading] = useState("");
@@ -9,7 +9,7 @@ export const NavLinks = () => {
   return (
     <>
       {links.map((link) => (
-        <div>
+        <div key={link.id}>
           <div className="px-3 text-left md:cursor-pointer group">
             <h1
               className="py-7 flex justify-between items-center md:pr-0 pr-5 group cursor-pointer"
@@ -38,12 +38,12 @@ export const NavLinks = () => {
                   </div>
                   <div className=" bg-purple-700 p-5 grid grid-cols-3 gap-10">
                     {link.sublinks.map((mysublinks) => (
-                      <div>
+                      <div key={mysublinks.id}>
                         <h1 className="text-lg font-semibold">
                           {mysublinks.Head}
                         </h1>
                         {mysublinks.sublink.map((slink) => (
-                          <li className="text-sm my-2.5">
+                          <li key={slink.link} className="text-sm my-2.5">
                             <Link
                               to={slink.link}
                               className="hover:text-purple-200"
@@ -67,7 +67,7 @@ export const NavLinks = () => {
           >
             {/* sublinks */}
             {link.sublinks.map((slinks) => (
-              <div>
+              <div key={slinks.id}>
                 <div>
                   <h1
                     onClick={() =>
@@ -94,7 +94,7 @@ export const NavLinks = () => {
                     }`}
                   >
                     {slinks.sublink.map((slink) => (
-                      <li className="py-3 pl-14">
+                      <li key={slink.link} className="py-3 pl-14">
                         <Link to={slink.link} className="hover:text-purple-200">
                           {slink.name}
                         </Link>
