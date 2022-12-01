@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { links } from "./myLinks";
@@ -60,11 +61,7 @@ export const NavLinks = () => {
             )}
           </div>
           {/* Mobile menus */}
-          <div
-            className={`
-          ${heading === link.name ? "md:hidden" : "hidden"}
-          `}
-          >
+          <div className={clsx(heading === link.name ? "md:hidden" : "hidden",)}>
             {/* sublinks */}
             {link.sublinks.map((slinks) => (
               <div key={slinks.id}>

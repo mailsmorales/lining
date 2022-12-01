@@ -1,11 +1,13 @@
+import { v4 as uuidv4 } from 'uuid';
+
 export const links = [
   {
-    id: '1',
+    id: uuidv4(),
     name: "Мужские",
     submenu: true,
     sublinks: [
       {
-        id: '1',
+        id: uuidv4(),
         Head: "Верхняя одежда",
         sublink: [
           { name: "Running", link: "/1" },
@@ -16,7 +18,7 @@ export const links = [
         ],
       },
       {
-        id: '2',
+        id: uuidv4(),
         Head: "Нижняя одежда",
         sublink: [
           { name: "Running", link: "/1" },
@@ -27,7 +29,7 @@ export const links = [
         ],
       },
       {
-        id: '3',
+        id: uuidv4(),
         Head: "Обувь",
         sublink: [
           { name: "Running", link: "/1" },
@@ -40,12 +42,12 @@ export const links = [
     ],
   },
   {
-    id: '2',
+    id: uuidv4(),
     name: "Женские",
     submenu: true,
     sublinks: [
       {
-        id: '1',
+        id: uuidv4(),
         Head: "Верхняя одежда",
         sublink: [
           { name: "Running", link: "/1" },
@@ -56,7 +58,7 @@ export const links = [
         ],
       },
       {
-        id: '2',
+        id: uuidv4(),
         Head: "Нижняя одежда",
         sublink: [
           { name: "Running", link: "/1" },
@@ -67,7 +69,7 @@ export const links = [
         ],
       },
       {
-        id: '3',
+        id: uuidv4(),
         Head: "Обувь",
         sublink: [
           { name: "Running", link: "/1" },
@@ -80,12 +82,12 @@ export const links = [
     ],
   },
   {
-    id: '3',
+    id: uuidv4(),
     name: "Детские",
     submenu: true,
     sublinks: [
       {
-        id: '1',
+        id: uuidv4(),
         Head: "Верхняя одежда",
         sublink: [
           { name: "Running", link: "/1" },
@@ -96,7 +98,7 @@ export const links = [
         ],
       },
       {
-        id: '2',
+        id: uuidv4(),
         Head: "Нижняя одежда",
         sublink: [
           { name: "Running", link: "/1" },
@@ -107,7 +109,7 @@ export const links = [
         ],
       },
       {
-        id: '3',
+        id: uuidv4(),
         Head: "Обувь",
         sublink: [
           { name: "Running", link: "/1" },
